@@ -16,7 +16,8 @@ def treeinsert(node, item):
         node.left = treeinsert(node.left, item)
     elif item > node.key:
         node.right = treeinsert(node.right, item)
-    return node
+     
+    
 
 
 def BFS(node):
