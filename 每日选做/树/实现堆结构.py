@@ -35,10 +35,8 @@ class BinHeap:
         self.currentsize = len(alist)
         self.heaplist = [0] + alist[:]
         while i > 0:
-
             self.percdown(i)
             i = i - 1
-
 
     def insert(self, item):
         self.heaplist.append(item)
@@ -55,11 +53,10 @@ class BinHeap:
 
 
 bh = BinHeap()
-n=int(input())
+n = int(input())
 for _ in range(n):
-    line=input().strip()
-    if line[0]=='1':
+    line = input().strip()
+    if line[0] == '1':
         bh.insert(int(line[2:]))
     else:
         print(bh.delmin())
-    
